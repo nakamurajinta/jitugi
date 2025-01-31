@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+.contants{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+}
+.box{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+.text{
+    display: grid;
+    background-color: darkslategray;
+    color: white;
+    margin: 0 auto;
+    width: 800px;
+    height: 100px;
+}
+@media(max-width:767px){
+    .box{
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="contants">
+        <div class="box"></div><p>テキスト1</p>
+        <div class="box"></div><p>テキスト2</p>
+        <div class="box"></div><p>テキスト3</p>
+        <div class="box"></div><p>テキスト4</p>
+    </div>
+    <div class="text">
+<p>文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+    文章ダミー 文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+    文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+    文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+</p>
+
+    </div>
+    <img class="img" src="../実技試験/img/kapi.jpg" alt="かぴパラ" style="display:block; margin: auto;">
+    <form action="#" method="post" ><p>お名前:
+    <input type="text" name="name"> <br>
+        返信を希望する方はチェックしてください。<br>
+        メッセージ:  <textarea name="comment" cols="40" rows="8"></textarea> <br>
+        </p> <p><input type="button" value="送信する" id="button2"></p></form>
+</body>
+</html>
